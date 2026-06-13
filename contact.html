@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <title>Smile Miles – Contact Us</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+	    <ul class="sidebar">
+		    <li class="no_hover" onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+		    <li><a href="index.html">Homepage</a></li>
+		    <li><a href="about.html">About Us</a></li>
+		    <li><a href="gallery.html">Gallery</a></li>
+		    <li><a href="contact.html" class="active">Contact Us</a></li>	
+	    </ul>
+	    <ul>
+		    <li><a href="index.html" class="logo-link"><img src="images/SmileMilesLogoNoBG.png" alt="Smile Miles Logo"></a></li>
+		    <li><a href="index.html" class="hideOnMobile">Homepage</a></li>
+		    <li><a href="about.html" class="hideOnMobile">About Us</a></li>
+		    <li><a href="gallery.html" class="hideOnMobile">Gallery</a></li>
+		    <li><a href="contact.html" class="active hideOnMobile">Contact Us</a></li>
+		    <li class="menu-btn no_hover" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+	    </ul>
+	</nav>
+
+    <script>
+		function showSidebar(){
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = 'flex'
+		}
+		function hideSidebar(){
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = 'none'
+		}
+	</script>
+
+	<main class="contact-page">
+		<section class="contact" id="contact">
+			<div class="contact-container">
+				<form class="contact-form" action="mailto:smilemiles.nz@gmail.com" method="POST">
+					<input type="text" name="name" placeholder="Your Name" required>
+					<input type="email" name="email" placeholder="Your Email" required>
+					<textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+					<button type="submit">Send Message</button>
+				</form>	
+		
+				<div class="contact-info">
+                	<h2 class="contact-title">Get in touch</h2>
+                	<p><i class="fa fa-envelope-open"></i>smilemiles.nz@gmail.com</p>
+                	<p><i class="fa fa-map-marker"></i>New Zealand</p>
+            	</div>
+			</div>
+		
+		</section>
+		
+	</main>
+
+	<!-- FOOTER -->
+
+	<footer>
+		<div class="footer-container">
+			<div class="copyright">
+				<p>© 2026 Smile Miles, New Zealand Based</p>
+			</div>
+
+			<div class="footer-icons">
+				<ul>
+					<li><a href="https://www.instagram.com/smilemiles.nz/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+					<li><a href="https://www.youtube.com/@SmileMilesnz" target="_blank"><i class="fa fa-youtube fa-2x"></i></a></li>
+					<li><a href="https://www.facebook.com/people/Smile-Miles/pfbid021s2mwMcpDPcpFDVXm4WzWk1cDmqscbwSM4HaWiB4QHgkBCnLHKyeVmkfkFXwAuJfl/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
+

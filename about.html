@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <title>Smile Miles – About Us</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+	    <ul class="sidebar">
+		    <li class="no_hover" onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#04BF59"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+		    <li><a href="index.html">Homepage</a></li>
+		    <li><a href="about.html" class="active">About Us</a></li>
+		    <li><a href="gallery.html">Gallery</a></li>
+		    <li><a href="contact.html">Contact Us</a></li>	
+	    </ul>
+	    <ul>
+		    <li><a href="index.html" class="logo-link"><img src="images/SmileMilesLogoNoBG.png" alt="Smile Miles Logo"></a></li>
+		    <li><a href="index.html" class="hideOnMobile">Homepage</a></li>
+		    <li><a href="about.html" class="active hideOnMobile">About Us</a></li>
+		    <li><a href="gallery.html" class="hideOnMobile">Gallery</a></li>
+		    <li><a href="contact.html" class="hideOnMobile">Contact Us</a></li>
+		    <li class="menu-btn no_hover" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#04BF59"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+	    </ul>
+	</nav>
+
+    <script>
+		function showSidebar(){
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = 'flex'
+		}
+		function hideSidebar(){
+			const sidebar = document.querySelector('.sidebar')
+			sidebar.style.display = 'none'
+		}
+	</script>
+
+	<main class="about-page">
+		
+		<section class="about">
+
+			<div class="about-container">
+				<div class="about-card">
+					<h1 class="text-xl">Smile Miles</h1>
+					<h2 class="text-md">What make us smile...</h2>
+					<p>
+						At Smile Miles, we believe everyone deserves to experience the radiance of the world, no matter where they are. Our mission is to bring placid walks, stunning scenery, and comforting moments to people who may not be able to get outside as often.
+						Through immersive walking videos, we help viewers explore parks, neighborhoods, nature trails, and everyday moments from the comfort of their room or home.
+						Because sometimes, even a small walk can make a big smile.
+					</p>	
+					<div class="hero-btns">
+						<a href="gallery.html" class="btn">Check Out Our Gallery!</a>
+					</div>
+				</div>
+
+				<div class="about-card">
+					<img src="images/walkingimg.jpg" alt="about us picture">
+				</div>
+			</div>
+		</section>
+
+	</main>
+	
+	<!-- FOOTER -->
+
+	<footer>
+		<div class="footer-container">
+			<div class="copyright">
+				<p>© 2026 Smile Miles, New Zealand Based</p>
+			</div>
+
+			<div class="footer-icons">
+				<ul>
+					<li><a href="https://www.instagram.com/smilemiles.nz/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+					<li><a href="https://www.youtube.com/@SmileMilesnz" target="_blank"><i class="fa fa-youtube fa-2x"></i></a></li>
+					<li><a href="https://www.facebook.com/people/Smile-Miles/pfbid021s2mwMcpDPcpFDVXm4WzWk1cDmqscbwSM4HaWiB4QHgkBCnLHKyeVmkfkFXwAuJfl/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>					
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

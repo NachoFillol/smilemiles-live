@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <title>Smile Miles – Gallery</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul class="sidebar">
+            <li class="no_hover" onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#04BF59"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li> 
+        </ul>
+
+        <ul>
+            <li><a href="index.html" class="logo-link"><img src="images/SmileMilesLogoNoBG.png" alt="Smile Miles Logo"></a></li>
+            <li><a href="index.html" class="hideOnMobile">Homepage</a></li>
+            <li><a href="about.html" class="hideOnMobile">About Us</a></li>
+            <li><a href="gallery.html" class="active hideOnMobile">Gallery</a></li>
+            <li><a href="contact.html" class="hideOnMobile">Contact Us</a></li>
+            <li class="menu-btn no_hover" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#04BF59"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <main class="gallery-page">
+
+        <section class="gallery-title">
+            <h1 class="text-xl">Gallery</h1>
+            <p>Capturing smiles, moments, and memories.</p>
+        </section>
+
+        <p class="gallery-week-label">
+            <i class="ti ti-star"></i> Video of the week
+        </p>
+
+        <div class="gallery-column">
+
+            <section class="gallery-feature">
+                <span class="gallery-badge">
+                    <i class="ti ti-award"></i> This week's pick
+                </span>
+                <iframe
+                    src="https://www.youtube.com/embed/4lp_u9_i5V8?autoplay=1&mute=1&loop=1&playlist=4lp_u9_i5V8&controls=0&disablekb=1&modestbranding=1&showinfo=0&rel=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </section>
+
+            <div class="gallery-description">
+                <h1>From Gower Park to the lake's edge — a Hamilton morning walk</h1>
+                <p>
+                    We start where the locals do — at Gower Park on Alison Street, where the wide green fields
+                    and quiet paths make for a gentle warm-up. From there, the walk winds out through the leafy
+                    streets of the Hamilton Lake neighbourhood, past front gardens and unhurried corners that give
+                    a real feel for everyday life in this part of Waikato. The pace is easy and the streets are
+                    calm. When the trees clear, Lake Rotoroa opens up ahead — and the rest of the walk follows
+                    the famous 3.8 km lakeside loop, with ducks, pūkeko, and a boardwalk stretch to enjoy before
+                    a well-earned rest by the water.
+                </p>
+                <div class="gallery-meta">
+                    <span><i class="ti ti-clock"></i> 22 min</span>
+                    <span><i class="ti ti-map-pin"></i> Hamilton, NZ</span>
+                    <span><i class="ti ti-arrows-right"></i> 2 km</span>
+                </div>
+                <div class="gallery-tags">
+                    <span class="tag-green">Lakeside</span>
+                    <span class="tag-green">Flat &amp; easy</span>
+                    <span class="tag-yellow">New Zealand</span>
+                </div>
+                <a href="https://www.youtube.com/watch?v=4lp_u9_i5V8" class="btn" target="_blank">
+                    <i class="ti ti-player-play"></i> Watch now
+                </a>
+            </div>
+
+        </div>
+
+        <section class="gallery-grid">
+            <h2 class="gallery-grid-title">More walks to explore</h2>
+            <div class="gallery-grid-row">
+
+                <div class="gallery-card">
+                    <iframe
+                        src="https://www.youtube.com/embed/LJm3KVwoWKg?autoplay=1&mute=1&loop=1&playlist=LJm3KVwoWKg&controls=0&disablekb=1&modestbranding=1&showinfo=0&rel=0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                    <div class="gallery-card-body">
+                        <h3>Te Hikuwai - Walk with Us</h3>
+                        <p>24 min · Hamilton, NZ · 2.5km</p>
+                        <div class="gallery-tags">
+                            <span class="tag-green">Park walk</span>
+                            <span class="tag-green">Nature</span>
+                            <span class="tag-yellow">New Zealand</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=LJm3KVwoWKg" class="btn" target="_blank">
+                            <i class="ti ti-player-play"></i> Watch now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <iframe
+                        src="https://www.youtube.com/embed/sRKo09tgntw?autoplay=1&mute=1&loop=1&playlist=sRKo09tgntw&controls=0&disablekb=1&modestbranding=1&showinfo=0&rel=0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                    <div class="gallery-card-body">
+                        <h3>Hamilton Lake - Walk with Us</h3>
+                        <p>15 min · Hamilton, NZ · 1.5km</p>
+                        <div class="gallery-tags">
+                            <span class="tag-green">Lakeside</span>
+                            <span class="tag-green">Nature</span>
+                            <span class="tag-yellow">New Zealand</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=sRKo09tgntw" class="btn" target="_blank">
+                            <i class="ti ti-player-play"></i> Watch now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <iframe
+                        src="https://www.youtube.com/embed/4lp_u9_i5V8?autoplay=1&mute=1&loop=1&playlist=4lp_u9_i5V8&controls=0&disablekb=1&modestbranding=1&showinfo=0&rel=0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                    <div class="gallery-card-body">
+                        <h3>Gower Park - Walk with Us</h3>
+                        <p>22 min · Hamilton, NZ · 2km</p>
+                        <div class="gallery-tags">
+                            <span class="tag-green">Lakeside</span>
+                            <span class="tag-green">Park walk</span>
+                            <span class="tag-yellow">New Zealand</span>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=4lp_u9_i5V8" class="btn" target="_blank">
+                            <i class="ti ti-player-play"></i> Watch now
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                <p>© 2026 Smile Miles, New Zealand Based</p>
+            </div>
+
+            <div class="footer-icons">
+                <ul>
+                    <li><a href="https://www.instagram.com/smilemiles.nz/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://www.youtube.com/@SmileMilesnz" target="_blank"><i class="fa fa-youtube fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
